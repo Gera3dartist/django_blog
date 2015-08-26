@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad2587aa-3a44-494e-9a9e-c191658eff35" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deploy/database.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/blog/detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/blog/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deploy/migrations_001_added_blog_choices.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/blog/result.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy/database.sql" afterPath="$PROJECT_DIR$/deploy/database.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/django_blog.iml" afterPath="$PROJECT_DIR$/.idea/django_blog.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/models.py" afterPath="$PROJECT_DIR$/blog/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_blog/settings.py" afterPath="$PROJECT_DIR$/django_blog/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_blog/urls.py" afterPath="$PROJECT_DIR$/django_blog/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/views.py" afterPath="$PROJECT_DIR$/blog/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="django_blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,6 +61,24 @@
         <option name="myItemId" value="PostgreSQL - blog_db@localhost" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="blog_db.public" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="blog_posts" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PostgreSQL - blog_db@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -58,11 +90,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_blog/settings.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/result.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -72,157 +116,51 @@
         <entry file="file://$PROJECT_DIR$/blog/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_db.public.auth_user" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/abca4854/c30276f2-46c3-457d-bb4d-7e624d5e15e8/blog_db.public.auth_user">
-          <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.31034482">
-              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="41" />
+            <state vertical-scroll-proportion="-2.6666667">
+              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deploy/database.sql">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.033898305">
-              <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+            <state vertical-scroll-proportion="-2.0">
+              <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DATABASE/c30276f2-46c3-457d-bb4d-7e624d5e15e8" pinned="false" current-in-tab="false">
-        <entry file="uml://DATABASE/c30276f2-46c3-457d-bb4d-7e624d5e15e8">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>DATABASE</ID>
-              <OriginalElement>c30276f2-46c3-457d-bb4d-7e624d5e15e8</OriginalElement>
-              <nodes>
-                <node x="552.0" y="1322.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_database</node>
-                <node x="2536.0" y="2528.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_matviews</node>
-                <node x="2543.0" y="1322.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_locks</node>
-                <node x="1760.0" y="2224.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_user</node>
-                <node x="0.0" y="703.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_statistic</node>
-                <node x="3177.0" y="3188.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_default_acl</node>
-                <node x="1624.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_namespace</node>
-                <node x="389.0" y="3523.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_largeobject_metadata</node>
-                <node x="1501.0" y="3188.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_views</node>
-                <node x="1660.0" y="2528.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_sys_indexes</node>
-                <node x="0.0" y="3188.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_cast</node>
-                <node x="2381.0" y="3188.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_tablespace</node>
-                <node x="3161.0" y="1836.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_statio_sys_tables</node>
-                <node x="2506.0" y="2224.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_pltemplate</node>
-                <node x="1391.0" y="1836.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_database</node>
-                <node x="313.0" y="2989.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_collation</node>
-                <node x="1069.0" y="1322.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_index</node>
-                <node x="545.0" y="3188.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_statio_user_sequences</node>
-                <node x="1319.0" y="2769.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_depend</node>
-                <node x="1356.0" y="2528.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_seclabels</node>
-                <node x="2280.0" y="2989.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_indexes</node>
-                <node x="332.0" y="2769.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_ts_parser</node>
-                <node x="1952.0" y="2528.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_all_indexes</node>
-                <node x="0.0" y="2224.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_statio_user_tables</node>
-                <node x="790.0" y="0.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_am</node>
-                <node x="2616.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_enum</node>
-                <node x="3031.0" y="1322.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_trigger</node>
-                <node x="2103.0" y="3188.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_ts_template</node>
-                <node x="955.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_shseclabel</node>
-                <node x="352.0" y="2224.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_xact_all_tables</node>
-                <node x="2379.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_timezone_abbrevs</node>
-                <node x="920.0" y="1836.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_operator</node>
-                <node x="662.0" y="2769.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_extension</node>
-                <node x="690.0" y="2528.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_opclass</node>
-                <node x="1920.0" y="703.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_sys_tables</node>
-                <node x="1842.0" y="1836.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_roles</node>
-                <node x="704.0" y="2224.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_xact_sys_tables</node>
-                <node x="2972.0" y="2769.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_foreign_data_wrapper</node>
-                <node x="675.0" y="703.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_constraint</node>
-                <node x="2472.0" y="703.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_user_tables</node>
-                <node x="2864.0" y="2224.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_rewrite</node>
-                <node x="349.0" y="2528.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_amop</node>
-                <node x="1885.0" y="2769.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_statio_user_indexes</node>
-                <node x="2157.0" y="2769.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_statio_sys_indexes</node>
-                <node x="1179.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_description</node>
-                <node x="1802.0" y="3188.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_rules</node>
-                <node x="624.0" y="2989.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_event_trigger</node>
-                <node x="1877.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_db_role_setting</node>
-                <node x="0.0" y="2989.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_aggregate</node>
-                <node x="3065.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_user_mapping</node>
-                <node x="2288.0" y="1836.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_bgwriter</node>
-                <node x="203.0" y="3523.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_largeobject</node>
-                <node x="2755.0" y="1836.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_authid</node>
-                <node x="0.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_available_extensions</node>
-                <node x="2897.0" y="2528.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_tables</node>
-                <node x="0.0" y="1322.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_all_tables</node>
-                <node x="0.0" y="3523.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_foreign_table</node>
-                <node x="1500.0" y="2989.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_user_functions</node>
-                <node x="0.0" y="0.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_type</node>
-                <node x="0.0" y="2769.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_conversion</node>
-                <node x="1269.0" y="3188.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_statio_all_sequences</node>
-                <node x="1763.0" y="2989.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_xact_user_functions</node>
-                <node x="991.0" y="2769.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_foreign_server</node>
-                <node x="2920.0" y="3188.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_opfamily</node>
-                <node x="2026.0" y="2989.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_user_mappings</node>
-                <node x="2601.0" y="2989.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_amproc</node>
-                <node x="0.0" y="1836.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_replication</node>
-                <node x="1029.0" y="2528.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_available_extension_versions</node>
-                <node x="419.0" y="1836.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stats</node>
-                <node x="933.0" y="2989.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_cursors</node>
-                <node x="0.0" y="2528.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_language</node>
-                <node x="2244.0" y="2528.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_user_indexes</node>
-                <node x="2701.0" y="2769.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_shdepend</node>
-                <node x="725.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_attrdef</node>
-                <node x="1599.0" y="1322.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_settings</node>
-                <node x="2851.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_inherits</node>
-                <node x="2344.0" y="0.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_proc</node>
-                <node x="1033.0" y="3188.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_statio_sys_sequences</node>
-                <node x="2895.0" y="2989.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_ts_dict</node>
-                <node x="3278.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_shdescription</node>
-                <node x="2429.0" y="2769.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_statio_all_indexes</node>
-                <node x="1608.0" y="2769.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_database_conflicts</node>
-                <node x="1578.0" y="0.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_class</node>
-                <node x="2652.0" y="3188.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_ts_config</node>
-                <node x="1403.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_auth_members</node>
-                <node x="494.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_ts_config_map</node>
-                <node x="2133.0" y="2224.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_shadow</node>
-                <node x="278.0" y="3188.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_prepared_statements</node>
-                <node x="2128.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_group</node>
-                <node x="3188.0" y="2989.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_prepared_xacts</node>
-                <node x="1056.0" y="2224.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_statio_all_tables</node>
-                <node x="247.0" y="3366.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_timezone_names</node>
-                <node x="1408.0" y="2224.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_xact_user_tables</node>
-                <node x="789.0" y="3188.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_seclabel</node>
-                <node x="1220.0" y="2989.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_range</node>
-                <node x="1347.0" y="703.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_attribute</node>
-                <node x="2086.0" y="1322.0">c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_stat_activity</node>
-              </nodes>
-              <notes />
-              <edges />
-              <settings layout="Hierarchic Group" zoom="0.1386901485965878" x="616.4761904761904" y="2060.4761904761904" />
-              <SelectedNodes>
-                <node>c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_statio_user_tables</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Key columns</Category>
-                <Category>Columns</Category>
-              </Categories>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Html5" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -232,8 +170,16 @@
       <list>
         <option value="$PROJECT_DIR$/django_blog/settings.py" />
         <option value="dbtable:/abca4854/c30276f2-46c3-457d-bb4d-7e624d5e15e8/blog_db.public.auth_user" />
+        <option value="$PROJECT_DIR$/django_blog/urls.py" />
+        <option value="$PROJECT_DIR$/blog/templates/blog/index.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c30276f2-46c3-457d-bb4d-7e624d5e15e8/console.sql" />
         <option value="$PROJECT_DIR$/deploy/database.sql" />
         <option value="$PROJECT_DIR$/blog/models.py" />
+        <option value="$PROJECT_DIR$/deploy/migrations_001_added_blog_choices.sql" />
+        <option value="$PROJECT_DIR$/blog/templates/blog/detail.html" />
+        <option value="$PROJECT_DIR$/blog/views.py" />
+        <option value="$PROJECT_DIR$/blog/urls.py" />
+        <option value="$PROJECT_DIR$/blog/templates/blog/result.html" />
       </list>
     </option>
   </component>
@@ -272,7 +218,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -286,6 +231,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="django_blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django_blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django_blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django_blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="django_blog" />
@@ -320,17 +279,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django_blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django_blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django_blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django_blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysite" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RunManager" selected="Django server.django_blog">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -426,6 +428,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -545,7 +553,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$PROJECT_DIR$/../envss/bin/python3.4" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -578,30 +586,39 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40638298" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43404254" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960597" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40638298" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43404254" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40638298" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20766774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -612,10 +629,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c30276f2-46c3-457d-bb4d-7e624d5e15e8/console.sql">
+    <entry file="file://$PROJECT_DIR$/django_blog/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/database.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -726,50 +759,258 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.1386901485965878" x="616.4761904761904" y="2060.4761904761904" />
+          <settings layout="Hierarchic Group" zoom="0.1386901485965878" x="616.0" y="2060.0" />
           <SelectedNodes>
             <node>c30276f2-46c3-457d-bb4d-7e624d5e15e8.table:blog_db.pg_catalog.pg_statio_user_tables</node>
           </SelectedNodes>
           <Categories>
-            <Category>Key columns</Category>
             <Category>Columns</Category>
+            <Category>Key columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../envss/lib/python3.4/site-packages/django/core/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/abca4854/c30276f2-46c3-457d-bb4d-7e624d5e15e8/blog_db.public.auth_user">
-      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.31034482">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="41" />
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../envss/lib/python3.4/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.142858">
+          <caret line="419" column="37" selection-start-line="419" selection-start-column="37" selection-end-line="419" selection-end-column="37" />
+          <folding>
+            <element signature="e#735#912#0" expanded="false" />
+            <element signature="e#735#831#1" expanded="false" />
+            <element signature="e#1002#1272#0" expanded="false" />
+            <element signature="e#1068#1272#0" expanded="false" />
+            <element signature="e#1340#3218#0" expanded="false" />
+            <element signature="e#1340#2402#1" expanded="false" />
+            <element signature="e#2629#2866#0" expanded="false" />
+            <element signature="e#2899#3064#0" expanded="false" />
+            <element signature="e#3101#3158#0" expanded="false" />
+            <element signature="e#3261#3391#0" expanded="false" />
+            <element signature="e#3261#3316#1" expanded="false" />
+            <element signature="e#3365#3391#0" expanded="false" />
+            <element signature="e#3454#4634#0" expanded="false" />
+            <element signature="e#3454#4235#1" expanded="false" />
+            <element signature="e#4462#4529#0" expanded="false" />
+            <element signature="e#4562#4578#0" expanded="false" />
+            <element signature="e#4615#4634#0" expanded="false" />
+            <element signature="e#4681#5773#0" expanded="false" />
+            <element signature="e#4739#5096#0" expanded="false" />
+            <element signature="e#4739#4845#1" expanded="false" />
+            <element signature="e#5347#5663#0" expanded="false" />
+            <element signature="e#5347#5607#1" expanded="false" />
+            <element signature="e#5717#5773#0" expanded="false" />
+            <element signature="e#5817#6929#0" expanded="false" />
+            <element signature="e#5937#6528#0" expanded="false" />
+            <element signature="e#5937#6030#1" expanded="false" />
+            <element signature="e#6618#6732#0" expanded="false" />
+            <element signature="e#6817#6929#0" expanded="false" />
+            <element signature="e#7212#7227#0" expanded="false" />
+            <element signature="e#7265#7362#0" expanded="false" />
+            <element signature="e#7395#7421#0" expanded="false" />
+            <element signature="e#7458#7487#0" expanded="false" />
+            <element signature="e#7525#7659#0" expanded="false" />
+            <element signature="e#7525#7638#1" expanded="false" />
+            <element signature="e#7701#7843#0" expanded="false" />
+            <element signature="e#7701#7823#1" expanded="false" />
+            <element signature="e#7895#7938#0" expanded="false" />
+            <element signature="e#7992#8320#0" expanded="false" />
+            <element signature="e#7992#8125#1" expanded="false" />
+            <element signature="e#8172#8253#0" expanded="false" />
+            <element signature="e#8367#8457#0" expanded="false" />
+            <element signature="e#8502#8542#0" expanded="false" />
+            <element signature="e#8581#8678#0" expanded="false" />
+            <element signature="e#8718#8817#0" expanded="false" />
+            <element signature="e#8864#9077#0" expanded="false" />
+            <element signature="e#8864#8926#1" expanded="false" />
+            <element signature="e#9200#9405#0" expanded="false" />
+            <element signature="e#9449#9620#0" expanded="false" />
+            <element signature="e#9672#9859#0" expanded="false" />
+            <element signature="e#9904#12912#0" expanded="false" />
+            <element signature="e#9904#10051#1" expanded="false" />
+            <element signature="e#10850#10865#0" expanded="false" />
+            <element signature="e#10922#11401#0" expanded="false" />
+            <element signature="e#10922#11167#1" expanded="false" />
+            <element signature="e#11456#11499#0" expanded="false" />
+            <element signature="e#11549#12161#0" expanded="false" />
+            <element signature="e#11549#11938#1" expanded="false" />
+            <element signature="e#12217#12528#0" expanded="false" />
+            <element signature="e#12217#12403#1" expanded="false" />
+            <element signature="e#12581#12912#0" expanded="false" />
+            <element signature="e#12581#12733#1" expanded="false" />
+            <element signature="e#12975#13167#1" expanded="false" />
+            <element signature="e#14415#14603#0" expanded="false" />
+            <element signature="e#14415#14506#1" expanded="false" />
+            <element signature="e#14643#14712#0" expanded="false" />
+            <element signature="e#14793#14917#0" expanded="false" />
+            <element signature="e#14793#14845#1" expanded="false" />
+            <element signature="e#15485#15489#0" expanded="false" />
+            <element signature="e#15522#15544#0" expanded="false" />
+            <element signature="e#15583#15623#0" expanded="false" />
+            <element signature="e#15662#15691#0" expanded="false" />
+            <element signature="e#15725#15780#0" expanded="false" />
+            <element signature="e#15810#15900#0" expanded="false" />
+            <element signature="e#15932#16022#0" expanded="false" />
+            <element signature="e#16074#16164#0" expanded="false" />
+            <element signature="e#16218#16308#0" expanded="false" />
+            <element signature="e#16345#16364#0" expanded="false" />
+            <element signature="e#16446#16475#0" expanded="false" />
+            <element signature="e#16587#16599#0" expanded="false" />
+            <element signature="e#16654#16701#0" expanded="false" />
+            <element signature="e#16751#16793#0" expanded="false" />
+            <element signature="e#16849#16965#0" expanded="false" />
+            <element signature="e#17015#17058#0" expanded="false" />
+            <element signature="e#17096#17107#0" expanded="false" />
+            <element signature="e#17149#17161#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_blog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+        <state vertical-scroll-proportion="-5.678571">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/models.py">
+    <entry file="file://$PROJECT_DIR$/django_blog/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../envss/lib/python3.4/site-packages/django/conf/urls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/abca4854/c30276f2-46c3-457d-bb4d-7e624d5e15e8/blog_db.public.blog_posts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c30276f2-46c3-457d-bb4d-7e624d5e15e8/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy/database.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.033898305">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.2851485">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3920792">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/migrations_001_added_blog_choices.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14257425">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0">
+          <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32079208">
+          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding />
         </state>
       </provider>

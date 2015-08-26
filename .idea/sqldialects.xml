@@ -2,5 +2,6 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/deploy/database.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/deploy/migrations_001_added_blog_choices.sql" dialect="PostgreSQL" />
   </component>
 </project>
