@@ -1671,6 +1671,26 @@
       <column name="is_cycled" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
       <column name="is_called" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
     </table>
+    <table name="blog_choices" schema="public" catalog="blog_db" type="TABLE">
+      <column name="id" sqlType="serial" precision="10" scale="0" nullable="false" jdbcType="4" def="bmV4dHZhbCgnYmxvZ19jaG9pY2VzX2lkX3NlcSc6OnJlZ2NsYXNzKQ==" autoIncrement="true"/>
+      <column name="choice_text" sqlType="varchar" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="votes" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="post_id" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="blog_choices_pkey" columns="id"/>
+      <foreign-key name="blog_choices_post_fkey" columns="post_id" ref-table="blog_posts" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="blog_choices_id_seq" schema="public" catalog="blog_db" type="SEQUENCE">
+      <column name="sequence_name" sqlType="name" precision="2147483647" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="start_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="increment_by" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="max_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="min_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="cache_value" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="log_cnt" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="is_cycled" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="is_called" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+    </table>
     <table name="blog_posts" schema="public" catalog="blog_db" type="TABLE">
       <column name="id" sqlType="serial" precision="10" scale="0" nullable="false" jdbcType="4" def="bmV4dHZhbCgnYmxvZ19wb3N0c19pZF9zZXEnOjpyZWdjbGFzcyk=" autoIncrement="true"/>
       <column name="body" sqlType="varchar" precision="1000" scale="0" nullable="true" jdbcType="12"/>
@@ -1678,6 +1698,7 @@
       <column name="user_id" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="blog_posts_pkey" columns="id"/>
       <foreign-key name="blog_posts_user_id_fkey" columns="user_id" ref-table="auth_user" ref-schema="public" ref-catalog="" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="blog_choices_post_fkey" table="blog_choices" schema="public" catalog="blog_db" columns="post_id"/>
     </table>
     <table name="blog_posts_id_seq" schema="public" catalog="blog_db" type="SEQUENCE">
       <column name="sequence_name" sqlType="name" precision="2147483647" scale="0" nullable="false" jdbcType="12"/>

@@ -1,3 +1,5 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}"/>
 {% if latest_post %}
  <ul>
     {% for post in latest_post %}
@@ -7,3 +9,4 @@
 {% else %}
     <p>No posts are available</p>
 {% endif %}
+<p> Total number of posts: {{ latest_post.count }}</p>
